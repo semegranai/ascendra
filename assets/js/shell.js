@@ -14,9 +14,9 @@
     <nav class="nav" aria-label="Primary">
       <div class="nav-inner">
         <a class="brand" href="index.html" aria-label="Ascendra — Home">
-          <span class="brand-mark" aria-hidden="true">A</span>
+          <img src="assets/img/logo.png" width="44" height="44" alt="" />
           <strong>Ascendra</strong>
-          <small>EST. 2025</small>
+          <small>Association</small>
         </a>
         <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links">Menu</button>
         <div class="nav-links" id="nav-links">
@@ -35,7 +35,7 @@
         <div class="foot-grid">
           <div class="foot-col foot-brand">
             <div class="brand">
-              <span class="brand-mark" aria-hidden="true">A</span>
+              <img src="assets/img/logo.png" width="44" height="44" alt="" />
               <strong>Ascendra Association</strong>
             </div>
             <p>A Missouri nonprofit. Practical AI tools for business owners who want to author their legacy and execute on their own terms.</p>

@@ -2,7 +2,7 @@
 
 Missouri nonprofit. Tools for business owners who want to author their legacy and execute on their own terms.
 
-This repo is the 2026 rebuild: a public toolkit site (email → skill packs, optional support) plus an Events page for meetups when they earn a date. Visual language is the Infra Capital Ventures design system — two rooms, same house — with Ascendra’s voice.
+This repo is the 2026 rebuild: a public toolkit site (email → skill packs, optional support) plus an Events page for meetups when they earn a date. Visual language is Ascendra’s own: light paper, navy + gold from the 2025 seal and masterclass deck.
 
 ## Working copy
 

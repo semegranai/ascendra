@@ -4,64 +4,11 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
 <title>Design System — Ascendra</title>
-<meta name="description" content="The design language of Ascendra. Dark for the public toolkit site. Light for in-the-list and event-day materials." />
+<meta name="description" content="The design language of Ascendra Association. Light and inviting. Navy and gold from the seal." />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;1,6..72,300;1,6..72,400&family=Instrument+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Source+Sans+3:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="assets/css/site.css" />
-<link rel="stylesheet" href="assets/css/site-light.css" />
-<style>
-  .ds-wrap{ padding: clamp(50px, 6vw, 90px) 0; }
-  .ds-modes{
-    display:grid; grid-template-columns: 1fr 1fr; gap: 0;
-    border: 1px solid var(--rule-strong);
-    margin: 40px 0 80px;
-  }
-  @media (max-width: 900px){ .ds-modes{ grid-template-columns: 1fr; } }
-
-  .ds-mode{ padding: clamp(28px, 3vw, 44px); position:relative; }
-  .ds-mode.dark{ background: #0b0f12; color: #e8e4db; border-right: 1px solid rgba(232,228,219,0.20); }
-  .ds-mode.light{ background: #f4f1e8; color: #0e120f; }
-  @media (max-width: 900px){
-    .ds-mode.dark{ border-right: 0; border-bottom: 1px solid rgba(232,228,219,0.20); }
-  }
-
-  .ds-mode h3{ font-family: var(--serif); font-weight: 400; font-size: 28px; letter-spacing: -0.01em; margin: 0 0 6px; }
-  .ds-mode .subtitle{ font-family: var(--sans); font-size: 14px; opacity: .7; margin: 0 0 24px; max-width: 42ch; }
-  .ds-mode .badge{ font-family: var(--mono); font-size: 10px; letter-spacing: 0.16em; text-transform: uppercase; }
-
-  .ds-swatch{ display:grid; grid-template-columns: 40px 1fr auto; align-items:center; gap:14px; padding: 12px 0; border-top: 1px solid currentColor; opacity: 0.95; border-color: rgba(128,128,128,0.2); }
-  .ds-swatch:first-of-type{ border-top: 0; }
-  .ds-swatch .chip{ width: 40px; height: 32px; border: 1px solid rgba(128,128,128,0.35); }
-  .ds-swatch .k{ font-family: var(--mono); font-size: 11px; letter-spacing: 0.06em; }
-  .ds-swatch .v{ font-family: var(--mono); font-size: 10px; opacity: 0.65; letter-spacing: 0.04em; }
-
-  .ds-type-row{ padding: 18px 0; border-top: 1px solid rgba(128,128,128,0.2); display:grid; grid-template-columns: 90px 1fr; gap: 20px; align-items:baseline; }
-  .ds-type-row:first-of-type{ border-top: 0; }
-  .ds-type-row .k{ font-family: var(--mono); font-size: 10px; letter-spacing: 0.14em; text-transform: uppercase; opacity: .55; }
-
-  .ds-cta-row{ display:flex; gap: 10px; flex-wrap: wrap; padding: 20px 0; border-top: 1px solid rgba(128,128,128,0.2); }
-  .ds-btn{ display:inline-flex; align-items:center; gap: 10px; padding: 10px 16px; font-family: var(--mono); font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; border: 1px solid; cursor: default; }
-
-  .ds-section-title{ font-family: var(--serif); font-size: clamp(30px,3vw,40px); font-weight: 400; letter-spacing: -0.02em; margin: 60px 0 20px; }
-  .ds-usage-grid{ display:grid; grid-template-columns: 1fr 1fr; gap: 32px; margin-top: 32px; }
-  @media (max-width: 800px){ .ds-usage-grid{ grid-template-columns: 1fr; } }
-  .ds-usage-card{ padding: 28px; border: 1px solid var(--rule-strong); background: var(--ink-100); }
-  .ds-usage-card h4{ font-family: var(--serif); font-size: 20px; font-weight: 400; margin: 0 0 10px; letter-spacing: -0.01em; }
-  .ds-usage-card p{ color: var(--bone-300); font-size: 14px; margin: 0 0 14px; }
-  .ds-usage-card ul{ margin: 0; padding-left: 18px; color: var(--bone-200); font-size: 13px; }
-  .ds-usage-card li{ padding: 3px 0; }
-
-  .ds-token-table{
-    width: 100%; border-collapse: collapse; margin-top: 12px; font-family: var(--mono); font-size: 12px;
-  }
-  .ds-token-table th, .ds-token-table td{
-    text-align: left; padding: 10px 12px; border-bottom: 1px solid var(--rule); vertical-align: top;
-  }
-  .ds-token-table th{ font-size: 10px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--bone-400); font-weight: 500; }
-  .ds-token-table code{ font-family: var(--mono); font-size: 11px; color: var(--bone-100); }
-  .ds-token-table td.desc{ font-family: var(--sans); color: var(--bone-300); font-size: 13px; }
-</style>
 </head>
 <body data-nav="ds">
 
@@ -70,333 +17,216 @@
 <header class="page-hero">
   <div class="wrap">
     <span class="eyebrow">Design language · v1.0 · August 2026</span>
-    <h1 class="h-display">Two rooms. <em>Same house.</em></h1>
-    <p class="lead">The public site — where owners pick up a toolkit — runs dark. It signals seriousness, mono precision, no pitch-fest. Once someone is on the list, or in a room, they enter the light mode — toolkit delivery, event-day materials, the memo they take home. Same type, same grid, same components. Warmer, brighter, hosted. The design system captures both. Visual language ported from Infra Capital Ventures; voice is Ascendra’s.</p>
+    <h1 class="h-display">Light house. <em>Gold torch.</em></h1>
+    <p class="lead">Colors, type, and the seal come from the 2025 masterclass deck — not from another firm’s site. The public pages run on warm paper. Navy and gold show up as the ceremonial room: the footer, the ticker, event-day covers, the circular mark. Same components in both. This document is the single source of truth.</p>
   </div>
 </header>
 
 <div class="ds-wrap wrap">
 
-  <!-- ============ SIDE BY SIDE MODES ============ -->
-  <h2 class="ds-section-title">01 · Modes</h2>
-  <p class="lead" style="margin-bottom: 0">The same design tokens with inverted foreground/background and warmer accents. An owner’s state should shift as they progress — from visitor to someone we’ve actually helped.</p>
+  <h2 class="ds-section-title">01 · The seal</h2>
+  <p class="lead">The circular mark is the brand. Hand, torch, ring type. Do not redraw it. Do not drop it into a square crop.</p>
+  <div style="display:flex; gap:32px; align-items:center; flex-wrap:wrap; margin: 28px 0 56px">
+    <img src="assets/img/logo.png" alt="Ascendra seal" width="160" height="160" />
+    <div>
+      <p class="body" style="max-width:48ch;margin:0 0 12px">Ring: <em>Author Your Legacy</em> · <em>Execute On Your Terms</em></p>
+      <p class="body" style="max-width:48ch;margin:0">Center wordmark is cream on navy. Torch is gold. Use the PNG with a transparent field. Minimum 32px. On navy, keep the gold ring visible.</p>
+    </div>
+  </div>
+
+  <h2 class="ds-section-title">02 · Modes</h2>
+  <p class="lead" style="margin-bottom:0">Two rooms. The house is light. The ceremonial room is navy. An owner should feel welcomed on the page, then recognize the seal when they print a memo or walk into a meetup.</p>
 
   <div class="ds-modes">
-    <!-- DARK -->
-    <div class="ds-mode dark">
-      <span class="badge" style="color:oklch(0.78 0.045 128)">◆ MODE 01 — DARK</span>
-      <h3 style="margin-top:10px">Public / Toolkit</h3>
-      <p class="subtitle">The public site. First contact. Signaling discipline, no pitch, and that the work is the product — not a ticket.</p>
-
-      <div style="margin-bottom: 24px">
-        <div class="k" style="font-family:var(--mono);font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:#a9a396;margin-bottom:10px">Surface</div>
-        <div class="ds-swatch"><span class="chip" style="background:#06080a"></span><span class="k">--ink-000</span><span class="v">#06080a</span></div>
-        <div class="ds-swatch"><span class="chip" style="background:#0b0f12"></span><span class="k">--ink-050 · body</span><span class="v">#0b0f12</span></div>
-        <div class="ds-swatch"><span class="chip" style="background:#0f1418"></span><span class="k">--ink-100 · card</span><span class="v">#0f1418</span></div>
-        <div class="ds-swatch"><span class="chip" style="background:#151b20"></span><span class="k">--ink-200</span><span class="v">#151b20</span></div>
+    <div class="ds-mode light">
+      <span class="eyebrow plain" style="color:var(--gold-deep)">◇ MODE 01 — LIGHT (default)</span>
+      <h3>Public / inviting</h3>
+      <p class="subtitle">The website. Toolkit pages. About, donate, empty events calendar. Warm paper, navy type, gold as a single accent.</p>
+      <div class="ds-swatch"><span class="chip" style="background:#FBF8F2"></span><span class="k">--paper</span><span class="v">#FBF8F2</span></div>
+      <div class="ds-swatch"><span class="chip" style="background:#FFFFFF"></span><span class="k">--white · cards</span><span class="v">#FFFFFF</span></div>
+      <div class="ds-swatch"><span class="chip" style="background:#EFE6D8"></span><span class="k">--cream</span><span class="v">#EFE6D8</span></div>
+      <div class="ds-swatch"><span class="chip" style="background:#03204E"></span><span class="k">--navy · ink</span><span class="v">#03204E</span></div>
+      <div class="ds-swatch"><span class="chip" style="background:#C89014"></span><span class="k">--gold</span><span class="v">#C89014</span></div>
+      <div class="ds-cta-row" style="display:flex;gap:10px;flex-wrap:wrap;padding:20px 0">
+        <span class="cta primary">Primary CTA</span>
+        <span class="cta">Secondary</span>
+        <span class="cta ghost">Ghost</span>
       </div>
-
-      <div style="margin-bottom: 24px">
-        <div class="k" style="font-family:var(--mono);font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:#a9a396;margin-bottom:10px">Ink</div>
-        <div class="ds-swatch"><span class="chip" style="background:#e8e4db"></span><span class="k">--bone-100 · fg</span><span class="v">#e8e4db</span></div>
-        <div class="ds-swatch"><span class="chip" style="background:#a9a396"></span><span class="k">--bone-300 · muted</span><span class="v">#a9a396</span></div>
-        <div class="ds-swatch"><span class="chip" style="background:#7a7669"></span><span class="k">--bone-400 · caption</span><span class="v">#7a7669</span></div>
-      </div>
-
-      <div style="margin-bottom: 24px">
-        <div class="k" style="font-family:var(--mono);font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:#a9a396;margin-bottom:10px">Accent</div>
-        <div class="ds-swatch"><span class="chip" style="background:oklch(0.78 0.045 128)"></span><span class="k">--olive · marker</span><span class="v">oklch(.78 .045 128)</span></div>
-        <div class="ds-swatch"><span class="chip" style="background:oklch(0.78 0.14 68)"></span><span class="k">--signal · warm CTA</span><span class="v">oklch(.78 .14 68)</span></div>
-      </div>
-
-      <div class="ds-cta-row" style="border-color: rgba(232,228,219,0.20)">
-        <span class="ds-btn" style="background:#e8e4db;color:#0b0f12;border-color:#e8e4db">Primary CTA</span>
-        <span class="ds-btn" style="border-color:#e8e4db;color:#e8e4db;background:transparent">Secondary</span>
-        <span class="ds-btn" style="border-color:rgba(232,228,219,0.20);color:#a9a396;background:transparent">Ghost</span>
-      </div>
-
-      <div class="ds-type-row" style="border-color: rgba(232,228,219,0.20);color:#e8e4db">
-        <span class="k" style="color:#a9a396">Display</span>
-        <span style="font-family:var(--serif);font-size:36px;line-height:1;letter-spacing:-.02em;font-weight:350">Author your legacy.</span>
-      </div>
-      <div class="ds-type-row" style="border-color: rgba(232,228,219,0.20);color:#a9a396">
-        <span class="k" style="color:#7a7669">Body</span>
-        <span style="font-family:var(--sans);font-size:15px">Leave an email. Run the skill this week. Optional jar.</span>
-      </div>
-      <div class="ds-type-row" style="border-color: rgba(232,228,219,0.20);color:oklch(0.78 0.045 128)">
-        <span class="k" style="color:#7a7669">Mono</span>
-        <span style="font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase">§ 03 · What you can run today</span>
-      </div>
+      <div style="font-family:var(--serif);font-size:32px;line-height:1.1;margin-top:8px">Author your <em>legacy.</em></div>
+      <div style="font-family:var(--sans);font-size:15px;color:var(--ink-soft);margin-top:10px">Leave an email. Run the skill this week. Optional jar.</div>
     </div>
 
-    <!-- LIGHT -->
-    <div class="ds-mode light">
-      <span class="badge" style="color:oklch(0.48 0.06 128)">◇ MODE 02 — LIGHT</span>
-      <h3 style="margin-top:10px">In the list / In the room</h3>
-      <p class="subtitle">Toolkit delivery, event-day one-pagers, the memo they take home. The tone shifts from quiet public to hosted.</p>
-
-      <div style="margin-bottom: 24px">
-        <div class="k" style="font-family:var(--mono);font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:#746f61;margin-bottom:10px">Surface</div>
-        <div class="ds-swatch"><span class="chip" style="background:#f8f6ef"></span><span class="k">--ink-000</span><span class="v">#f8f6ef</span></div>
-        <div class="ds-swatch"><span class="chip" style="background:#f4f1e8"></span><span class="k">--ink-050 · body</span><span class="v">#f4f1e8</span></div>
-        <div class="ds-swatch"><span class="chip" style="background:#ece7d9"></span><span class="k">--ink-100 · card</span><span class="v">#ece7d9</span></div>
-        <div class="ds-swatch"><span class="chip" style="background:#dfd8c5"></span><span class="k">--ink-200</span><span class="v">#dfd8c5</span></div>
+    <div class="ds-mode navy">
+      <span class="eyebrow plain" style="color:#E8C56A">◆ MODE 02 — NAVY (ceremonial)</span>
+      <h3>Seal / in the room</h3>
+      <p class="subtitle">Footer, ticker, event-day one-pagers, print covers. Same gold. Cream type. This is the top half of the 2025 title slide.</p>
+      <div class="ds-swatch"><span class="chip" style="background:#03204E"></span><span class="k">--navy</span><span class="v">#03204E</span></div>
+      <div class="ds-swatch"><span class="chip" style="background:#021536"></span><span class="k">--navy-deep</span><span class="v">#021536</span></div>
+      <div class="ds-swatch"><span class="chip" style="background:#EFE6D8"></span><span class="k">--cream · type</span><span class="v">#EFE6D8</span></div>
+      <div class="ds-swatch"><span class="chip" style="background:#C89014"></span><span class="k">--gold · torch</span><span class="v">#C89014</span></div>
+      <div class="ds-swatch"><span class="chip" style="background:#E8C56A"></span><span class="k">--gold-soft</span><span class="v">#E8C56A</span></div>
+      <div style="display:flex;gap:10px;flex-wrap:wrap;padding:20px 0">
+        <span class="cta" style="background:#EFE6D8;color:#03204E;border-color:#EFE6D8">Primary on navy</span>
+        <span class="cta" style="border-color:#EFE6D8;color:#EFE6D8">Secondary</span>
       </div>
-
-      <div style="margin-bottom: 24px">
-        <div class="k" style="font-family:var(--mono);font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:#746f61;margin-bottom:10px">Ink</div>
-        <div class="ds-swatch"><span class="chip" style="background:#0e120f"></span><span class="k">--bone-100 · fg</span><span class="v">#0e120f</span></div>
-        <div class="ds-swatch"><span class="chip" style="background:#4a4d43"></span><span class="k">--bone-300 · muted</span><span class="v">#4a4d43</span></div>
-        <div class="ds-swatch"><span class="chip" style="background:#746f61"></span><span class="k">--bone-400 · caption</span><span class="v">#746f61</span></div>
-      </div>
-
-      <div style="margin-bottom: 24px">
-        <div class="k" style="font-family:var(--mono);font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:#746f61;margin-bottom:10px">Accent</div>
-        <div class="ds-swatch"><span class="chip" style="background:oklch(0.48 0.06 128)"></span><span class="k">--olive · marker</span><span class="v">oklch(.48 .06 128)</span></div>
-        <div class="ds-swatch"><span class="chip" style="background:oklch(0.62 0.15 55)"></span><span class="k">--signal · warm CTA</span><span class="v">oklch(.62 .15 55)</span></div>
-      </div>
-
-      <div class="ds-cta-row" style="border-color: rgba(14,18,15,0.22)">
-        <span class="ds-btn" style="background:#0e120f;color:#f4f1e8;border-color:#0e120f">Primary CTA</span>
-        <span class="ds-btn" style="border-color:#0e120f;color:#0e120f;background:transparent">Secondary</span>
-        <span class="ds-btn" style="border-color:rgba(14,18,15,0.22);color:#4a4d43;background:transparent">Ghost</span>
-      </div>
-
-      <div class="ds-type-row" style="border-color: rgba(14,18,15,0.22);color:#0e120f">
-        <span class="k" style="color:#746f61">Display</span>
-        <span style="font-family:var(--serif);font-size:36px;line-height:1;letter-spacing:-.02em;font-weight:350">Author your legacy.</span>
-      </div>
-      <div class="ds-type-row" style="border-color: rgba(14,18,15,0.22);color:#4a4d43">
-        <span class="k" style="color:#746f61">Body</span>
-        <span style="font-family:var(--sans);font-size:15px">Leave an email. Run the skill this week. Optional jar.</span>
-      </div>
-      <div class="ds-type-row" style="border-color: rgba(14,18,15,0.22);color:oklch(0.48 0.06 128)">
-        <span class="k" style="color:#746f61">Mono</span>
-        <span style="font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase">§ 03 · What you can run today</span>
-      </div>
+      <div style="font-family:var(--serif);font-size:32px;line-height:1.1;margin-top:8px;color:#EFE6D8">Execute on your <em style="color:#E8C56A">terms.</em></div>
+      <div style="font-family:var(--sans);font-size:15px;opacity:.8;margin-top:10px">Missouri nonprofit. Tools for owners.</div>
     </div>
   </div>
 
-  <!-- ============ MODE USAGE ============ -->
   <div class="ds-usage-grid">
     <div class="ds-usage-card">
-      <span class="mono-sm" style="color:var(--olive)">◆ Dark applies to</span>
-      <h4 style="margin-top:10px">Public / toolkit surfaces</h4>
-      <p>Any surface an owner sees before they are on the list. The tone is serious, discreet, and self-selecting — not a ticket shop.</p>
+      <span class="eyebrow plain">◇ Light applies to</span>
+      <h4 style="margin-top:10px">The house</h4>
+      <p>Anything an owner sees in a browser in daylight. Should feel like a workshop table, not a vault.</p>
       <ul>
-        <li>Marketing site (Home, Tools, About, Donate)</li>
-        <li>Events page when empty (honest calendar)</li>
-        <li>This design-system page (default)</li>
-        <li>Cold outbound and LinkedIn notes</li>
+        <li>Home, Tools, About, Donate, Legal</li>
+        <li>Events page (empty or posted)</li>
+        <li>This design-system page</li>
       </ul>
     </div>
     <div class="ds-usage-card">
-      <span class="mono-sm" style="color:var(--signal)">◇ Light applies to</span>
-      <h4 style="margin-top:10px">In-the-list / hosting surfaces</h4>
-      <p>Any surface an owner sees after they have the toolkit, or in a room. The tone is warm, transparent, and hosted.</p>
+      <span class="eyebrow plain">◆ Navy applies to</span>
+      <h4 style="margin-top:10px">The seal</h4>
+      <p>Short bands and print. Never the whole website. Light stays the default so the brand feels inviting.</p>
       <ul>
-        <li>Toolkit delivery emails and runbooks</li>
-        <li>The Value Readiness memo they generate</li>
-        <li>Event-day one-pagers and agendas</li>
-        <li>Print / PDF skill pack covers</li>
+        <li>Site footer</li>
+        <li>The ticker ribbon</li>
+        <li>Event-day covers and one-pagers</li>
+        <li>The circular mark itself</li>
       </ul>
     </div>
   </div>
 
-  <!-- ============ TYPOGRAPHY ============ -->
-  <h2 class="ds-section-title">02 · Typography</h2>
-  <p class="lead">Three families. One editorial serif for display, one geometric-humanist sans for body, one mono for chrome. Numerals are tabular by default — every dollar figure and stage code should align vertically.</p>
+  <h2 class="ds-section-title">03 · Typography</h2>
+  <p class="lead">Three families, taken from how the 2025 deck actually set type: an editorial serif for display, a warm humanist sans for everything you read, a script used sparingly for names and hospitality — never for UI chrome.</p>
 
-  <div style="border: 1px solid var(--rule-strong); background: var(--ink-100); padding: 40px; margin: 32px 0 60px">
-    <div style="display:grid;grid-template-columns:180px 1fr;gap: 40px;align-items:center;padding-bottom:24px;border-bottom:1px solid var(--rule);margin-bottom:24px">
+  <div style="border:1px solid var(--line-strong); background:var(--white); padding:36px; border-radius:12px; margin: 28px 0 56px">
+    <div style="display:grid;grid-template-columns:180px 1fr;gap:32px;align-items:center;padding-bottom:22px;border-bottom:1px solid var(--line);margin-bottom:22px">
       <div>
-        <div class="mono-sm" style="color:var(--olive)">Display</div>
-        <div style="font-family:var(--mono);font-size:11px;color:var(--bone-300);margin-top:8px">Newsreader<br>Weight 350–400<br>opsz 6..72</div>
+        <div class="mono-sm" style="color:var(--gold-deep)">Display</div>
+        <div style="font-size:12px;color:var(--ink-mute);margin-top:8px">Playfair Display<br>Weight 600 · italic for emphasis</div>
       </div>
-      <div style="font-family:var(--serif);font-size:64px;line-height:1;letter-spacing:-.02em;font-weight:350">Author your <em>legacy</em>.</div>
+      <div style="font-family:var(--serif);font-size:52px;line-height:1.05;letter-spacing:-.02em;font-weight:600">Author your <em>legacy.</em></div>
     </div>
-
-    <div style="display:grid;grid-template-columns:180px 1fr;gap: 40px;align-items:center;padding-bottom:24px;border-bottom:1px solid var(--rule);margin-bottom:24px">
+    <div style="display:grid;grid-template-columns:180px 1fr;gap:32px;align-items:center;padding-bottom:22px;border-bottom:1px solid var(--line);margin-bottom:22px">
       <div>
-        <div class="mono-sm" style="color:var(--olive)">Section</div>
-        <div style="font-family:var(--mono);font-size:11px;color:var(--bone-300);margin-top:8px">Newsreader<br>Weight 350<br>52px / -0.02em</div>
+        <div class="mono-sm" style="color:var(--gold-deep)">Section</div>
+        <div style="font-size:12px;color:var(--ink-mute);margin-top:8px">Playfair Display<br>28–46px</div>
       </div>
-      <div style="font-family:var(--serif);font-size:44px;line-height:1.02;letter-spacing:-.02em;font-weight:350">A memo on your business. <em>Not another lecture.</em></div>
+      <div style="font-family:var(--serif);font-size:36px;line-height:1.12;font-weight:600">A memo on your business. <em>Not another lecture.</em></div>
     </div>
-
-    <div style="display:grid;grid-template-columns:180px 1fr;gap: 40px;align-items:center;padding-bottom:24px;border-bottom:1px solid var(--rule);margin-bottom:24px">
+    <div style="display:grid;grid-template-columns:180px 1fr;gap:32px;align-items:center;padding-bottom:22px;border-bottom:1px solid var(--line);margin-bottom:22px">
       <div>
-        <div class="mono-sm" style="color:var(--olive)">Lead</div>
-        <div style="font-family:var(--mono);font-size:11px;color:var(--bone-300);margin-top:8px">Instrument Sans<br>Weight 380<br>18–20px</div>
+        <div class="mono-sm" style="color:var(--gold-deep)">Body / UI</div>
+        <div style="font-size:12px;color:var(--ink-mute);margin-top:8px">Source Sans 3<br>Weight 400–600</div>
       </div>
-      <div class="lead" style="max-width: none">Practical AI tools for owners who want a business that can run, grow, or transfer — without handing the reins to someone else.</div>
+      <div class="lead" style="max-width:none;margin:0">Practical AI tools for owners who want a business that can run, grow, or transfer — without handing the reins to someone else.</div>
     </div>
-
-    <div style="display:grid;grid-template-columns:180px 1fr;gap: 40px;align-items:center;padding-bottom:24px;border-bottom:1px solid var(--rule);margin-bottom:24px">
+    <div style="display:grid;grid-template-columns:180px 1fr;gap:32px;align-items:center">
       <div>
-        <div class="mono-sm" style="color:var(--olive)">Body</div>
-        <div style="font-family:var(--mono);font-size:11px;color:var(--bone-300);margin-top:8px">Instrument Sans<br>Weight 400<br>15–16px</div>
+        <div class="mono-sm" style="color:var(--gold-deep)">Script</div>
+        <div style="font-size:12px;color:var(--ink-mute);margin-top:8px">Great Vibes<br>Names, hospitality only</div>
       </div>
-      <div style="font-size:16px;color:var(--bone-200);max-width:60ch">Leave an email. Run the skill on your own business. If it helped, optional support. Meetups still have a page when they earn a date.</div>
-    </div>
-
-    <div style="display:grid;grid-template-columns:180px 1fr;gap: 40px;align-items:center;padding-bottom:24px;border-bottom:1px solid var(--rule);margin-bottom:24px">
-      <div>
-        <div class="mono-sm" style="color:var(--olive)">Mono / Eyebrow</div>
-        <div style="font-family:var(--mono);font-size:11px;color:var(--bone-300);margin-top:8px">JetBrains Mono<br>Weight 400<br>10–11px · 0.14em</div>
-      </div>
-      <div>
-        <span class="eyebrow" style="margin-bottom:14px">§ 03 · What you can run today</span>
-        <div class="mono-sm" style="margin-top:16px;color:var(--olive)">PACK 01 · VALUE READINESS · FREE WITH EMAIL</div>
-      </div>
-    </div>
-
-    <div style="display:grid;grid-template-columns:180px 1fr;gap: 40px;align-items:center">
-      <div>
-        <div class="mono-sm" style="color:var(--olive)">Data / Tabular</div>
-        <div style="font-family:var(--mono);font-size:11px;color:var(--bone-300);margin-top:8px">Newsreader Serif<br>tnum · 40–64px</div>
-      </div>
-      <div style="display:flex;gap:32px;align-items:baseline" class="tabular">
-        <span style="font-family:var(--serif);font-size:52px;line-height:1;letter-spacing:-.02em">3</span>
-        <span style="font-family:var(--serif);font-size:52px;line-height:1;letter-spacing:-.02em">$10</span>
-        <span style="font-family:var(--serif);font-size:52px;line-height:1;letter-spacing:-.02em">4</span>
-      </div>
+      <div style="font-family:var(--script);font-size:42px;color:var(--gold-deep);line-height:1">Let’s ascend.</div>
     </div>
   </div>
 
-  <!-- ============ COMPONENTS ============ -->
-  <h2 class="ds-section-title">03 · Components</h2>
-
-  <div style="display:grid;grid-template-columns:1fr 1fr;gap:32px;margin: 32px 0 40px">
-    <!-- Pills -->
-    <div style="border: 1px solid var(--rule-strong); background: var(--ink-100); padding: 32px">
-      <div class="mono-sm" style="color:var(--olive);margin-bottom:16px">Pill / Tag</div>
-      <div style="display:flex;gap:8px;flex-wrap:wrap;margin-bottom:20px">
-        <span class="pill"><span class="dot"></span>Free with email</span>
-        <span class="pill warm"><span class="dot"></span>Coming</span>
-        <span class="pill"><span class="dot"></span>Owner-optional</span>
-        <span class="pill"><span class="dot"></span>Value readiness</span>
-      </div>
-      <p style="font-size:13px;color:var(--bone-300);margin:0">Used to tag packs and status. Warm variant reserved for Coming / waitlist — visually differentiated so we never fake a live product.</p>
-    </div>
-
-    <!-- Criteria row -->
-    <div style="border: 1px solid var(--rule-strong); background: var(--ink-100); padding: 32px">
-      <div class="mono-sm" style="color:var(--olive);margin-bottom:16px">Criteria row</div>
-      <div class="crit-row" style="border:0;padding: 12px 0">
-        <div class="n">01</div>
-        <div class="t" style="font-size:16px">Leave an email<small>We send the skill file and a 3-minute runbook.</small></div>
-        <div class="v">Required</div>
-      </div>
-      <p style="font-size:13px;color:var(--bone-300);margin:12px 0 0;padding-top:12px;border-top:1px solid var(--rule)">The standard row for enumerated criteria, checklists, and screening summary. Consistent across public site + qualifier + briefing packs.</p>
-    </div>
-
-    <!-- Buttons -->
-    <div style="border: 1px solid var(--rule-strong); background: var(--ink-100); padding: 32px">
-      <div class="mono-sm" style="color:var(--olive);margin-bottom:16px">Buttons</div>
-      <div style="display:flex;gap:10px;flex-wrap:wrap;margin-bottom:20px">
+  <h2 class="ds-section-title">04 · Components</h2>
+  <div class="split" style="margin: 24px 0 48px">
+    <div class="arch">
+      <div class="mono-sm" style="color:var(--gold-deep);margin-bottom:14px">Buttons</div>
+      <div style="display:flex;gap:10px;flex-wrap:wrap;margin-bottom:16px">
         <span class="cta primary">Primary <span class="arrow">→</span></span>
         <span class="cta">Secondary</span>
         <span class="cta ghost">Ghost</span>
       </div>
-      <p style="font-size:13px;color:var(--bone-300);margin:0">Rectangular, monospace, ALL CAPS with 0.14em tracking. Primary hover shifts to warm signal — a single moment of hue in an otherwise-neutral system.</p>
+      <p style="font-size:14px;color:var(--ink-soft);margin:0">Rounded 8px, sentence-adjacent labels, Source Sans 3. Primary is navy. Hover shifts to gold — the only moment of torch heat.</p>
     </div>
-
-    <!-- Data cell -->
-    <div style="border: 1px solid var(--rule-strong); background: var(--ink-100); padding: 32px">
-      <div class="mono-sm" style="color:var(--olive);margin-bottom:16px">Data cell</div>
-      <div style="border-top:1px solid var(--rule);padding: 14px 0" class="tabular">
-        <div class="mono-sm" style="color:var(--bone-400);margin-bottom:6px">Optional support</div>
-        <div style="font-family:var(--serif);font-size:44px;letter-spacing:-.02em;line-height:1">$10</div>
+    <div class="arch">
+      <div class="mono-sm" style="color:var(--gold-deep);margin-bottom:14px">Pills</div>
+      <div style="display:flex;gap:8px;flex-wrap:wrap;margin-bottom:16px">
+        <span class="pill"><span class="dot"></span>Free with email</span>
+        <span class="pill warm"><span class="dot"></span>Coming</span>
+        <span class="pill"><span class="dot"></span>Value readiness</span>
       </div>
-      <p style="font-size:13px;color:var(--bone-300);margin:12px 0 0;padding-top:12px;border-top:1px solid var(--rule)">Serif tabular figure paired with monospace caption. Used everywhere numbers appear — hero facts, sector cards, delivery-partner stats.</p>
+      <p style="font-size:14px;color:var(--ink-soft);margin:0">Warm variant is reserved for Coming / waitlist so we never fake a live product.</p>
     </div>
   </div>
 
-  <!-- ============ TOKENS TABLE ============ -->
-  <h2 class="ds-section-title">04 · Tokens</h2>
-  <p class="lead">The full token set. Every design decision reduces to these — one file to update to change the entire system.</p>
-
-  <div style="border: 1px solid var(--rule-strong); background: var(--ink-100); padding: 32px; margin: 32px 0">
+  <h2 class="ds-section-title">05 · Tokens</h2>
+  <p class="lead">Sampled from the circular seal and the 2025 title slide. One file to update.</p>
+  <div style="border:1px solid var(--line-strong); background:var(--white); padding:24px; border-radius:12px; margin: 24px 0">
     <table class="ds-token-table">
-      <thead><tr><th>Token</th><th>Dark</th><th>Light</th><th>Purpose</th></tr></thead>
+      <thead><tr><th>Token</th><th>Value</th><th>Source</th><th>Purpose</th></tr></thead>
       <tbody>
-        <tr><td><code>--ink-050</code></td><td><code>#0b0f12</code></td><td><code>#f4f1e8</code></td><td class="desc">Body / canvas background</td></tr>
-        <tr><td><code>--ink-100</code></td><td><code>#0f1418</code></td><td><code>#ece7d9</code></td><td class="desc">Card / elevated surface</td></tr>
-        <tr><td><code>--bone-100</code></td><td><code>#e8e4db</code></td><td><code>#0e120f</code></td><td class="desc">Primary foreground</td></tr>
-        <tr><td><code>--bone-300</code></td><td><code>#a9a396</code></td><td><code>#4a4d43</code></td><td class="desc">Muted foreground</td></tr>
-        <tr><td><code>--olive</code></td><td><code>oklch(.78 .045 128)</code></td><td><code>oklch(.48 .06 128)</code></td><td class="desc">Mono accent · markers · live packs</td></tr>
-        <tr><td><code>--signal</code></td><td><code>oklch(.78 .14 68)</code></td><td><code>oklch(.62 .15 55)</code></td><td class="desc">Warm CTA hover · Coming / waitlist</td></tr>
-        <tr><td><code>--pass</code></td><td><code>oklch(.78 .14 155)</code></td><td><code>oklch(.52 .14 155)</code></td><td class="desc">High / pass scores</td></tr>
-        <tr><td><code>--stop</code></td><td><code>oklch(.70 .18 25)</code></td><td><code>oklch(.55 .19 25)</code></td><td class="desc">Low / owner-trapped scores</td></tr>
-        <tr><td><code>--serif</code></td><td colspan="2"><code>Newsreader, GT Sectra, Source Serif, Georgia</code></td><td class="desc">Display / editorial</td></tr>
-        <tr><td><code>--sans</code></td><td colspan="2"><code>Instrument Sans, Söhne, Helvetica Neue</code></td><td class="desc">Body / lead</td></tr>
-        <tr><td><code>--mono</code></td><td colspan="2"><code>JetBrains Mono, IBM Plex Mono</code></td><td class="desc">Eyebrows, chrome, data captions</td></tr>
+        <tr><td><code>--navy</code></td><td><code>#03204E</code></td><td class="desc">Seal field + title slide</td><td class="desc">Primary ink, footer, primary CTA</td></tr>
+        <tr><td><code>--gold</code></td><td><code>#C89014</code></td><td class="desc">Seal ring + torch</td><td class="desc">Accent, hover, markers</td></tr>
+        <tr><td><code>--cream</code></td><td><code>#EFE6D8</code></td><td class="desc">ASCENDRA wordmark on the seal</td><td class="desc">Type on navy, CTA band</td></tr>
+        <tr><td><code>--paper</code></td><td><code>#FBF8F2</code></td><td class="desc">Warmed from cream</td><td class="desc">Page background</td></tr>
+        <tr><td><code>--ink-soft</code></td><td><code>#3A4A63</code></td><td class="desc">Navy, opened up</td><td class="desc">Body text</td></tr>
+        <tr><td><code>--serif</code></td><td colspan="2"><code>Playfair Display</code></td><td class="desc">Display / section</td></tr>
+        <tr><td><code>--sans</code></td><td colspan="2"><code>Source Sans 3</code></td><td class="desc">Body / UI</td></tr>
+        <tr><td><code>--script</code></td><td colspan="2"><code>Great Vibes</code></td><td class="desc">Hospitality only</td></tr>
       </tbody>
     </table>
   </div>
 
-  <!-- ============ VOICE ============ -->
-  <h2 class="ds-section-title">05 · Voice</h2>
+  <h2 class="ds-section-title">06 · Voice</h2>
   <div class="ds-usage-grid">
     <div class="ds-usage-card">
-      <span class="mono-sm" style="color:var(--olive)">Do</span>
-      <h4 style="margin-top:10px">Direct. Specific. Adult.</h4>
+      <span class="eyebrow plain">Do</span>
+      <h4 style="margin-top:10px">Direct. Specific. Welcoming.</h4>
       <ul>
-        <li>"Author your legacy. Execute on your terms."</li>
-        <li>"A buyer is not paying for your calendar."</li>
-        <li>"Get the business off your cell phone."</li>
-        <li>"This is not a pitch-fest."</li>
+        <li>“Author your legacy. Execute on your terms.”</li>
+        <li>“A buyer is not paying for your calendar.”</li>
+        <li>“Get the business off your cell phone.”</li>
+        <li>“This is not a pitch-fest.”</li>
       </ul>
     </div>
     <div class="ds-usage-card">
-      <span class="mono-sm" style="color:var(--signal)">Don't</span>
-      <h4 style="margin-top:10px">Hype. Event scarcity. Fake product.</h4>
+      <span class="eyebrow plain">Don’t</span>
+      <h4 style="margin-top:10px">Vault energy. Event scarcity. Fake product.</h4>
       <ul>
-        <li>Not: "Join the mastermind" · "limited seats" · "$97 investment"</li>
-        <li>Not: "small business" (say owner, local, operator)</li>
-        <li>Not: "unlock your potential" or advisor-day-rate cosplay</li>
-        <li>Not: tax-deductible claims, accreditation, or sale-price promises</li>
+        <li>Not: dark “institutional” chrome borrowed from another firm</li>
+        <li>Not: “join the mastermind” · limited seats · ticket math</li>
+        <li>Not: “small business” (say owner, local, operator)</li>
+        <li>Not: tax-deductible claims or accreditation</li>
       </ul>
     </div>
   </div>
 
-  <!-- ============ PRINCIPLES ============ -->
-  <h2 class="ds-section-title">06 · Principles</h2>
-  <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:0;border:1px solid var(--rule-strong);margin-top:32px" class="dp-caps">
-    <div style="padding:28px;border-right:1px solid var(--rule)">
-      <div class="mono-sm" style="color:var(--olive)">01</div>
-      <h4 style="font-family:var(--serif);font-size:20px;font-weight:400;letter-spacing:-.01em;margin:12px 0 8px">The tool is the product.</h4>
-      <p style="font-size:13px;color:var(--bone-300);margin:0">Show the skill working. Do not describe a dashboard. Consistency over cleverness.</p>
+  <h2 class="ds-section-title">07 · Principles</h2>
+  <div class="journey" style="margin-top:24px">
+    <div class="j-step">
+      <div class="j-num">01</div>
+      <h3 class="j-title">Invite first.</h3>
+      <p class="j-body">The page is a table, not a gate. Light paper, readable type, a gold torch — not a dark funnel.</p>
     </div>
-    <div style="padding:28px;border-right:1px solid var(--rule)">
-      <div class="mono-sm" style="color:var(--olive)">02</div>
-      <h4 style="font-family:var(--serif);font-size:20px;font-weight:400;letter-spacing:-.01em;margin:12px 0 8px">Value before the room.</h4>
-      <p style="font-size:13px;color:var(--bone-300);margin:0">The list and the toolkit add value before any meetup. Events earn a date; they are not the identity of the site.</p>
+    <div class="j-step">
+      <div class="j-num">02</div>
+      <h3 class="j-title">The tool is the product.</h3>
+      <p class="j-body">Show the skill working. Do not describe a dashboard. The transcript is the demo.</p>
     </div>
-    <div style="padding:28px;border-right:1px solid var(--rule)">
-      <div class="mono-sm" style="color:var(--olive)">03</div>
-      <h4 style="font-family:var(--serif);font-size:20px;font-weight:400;letter-spacing:-.01em;margin:12px 0 8px">Data as texture.</h4>
-      <p style="font-size:13px;color:var(--bone-300);margin:0">Scores, captions, and monospace chrome earn seriousness. Never decorative — always specific (cell phone, bookkeeper, four capitals).</p>
-    </div>
-    <div style="padding:28px">
-      <div class="mono-sm" style="color:var(--olive)">04</div>
-      <h4 style="font-family:var(--serif);font-size:20px;font-weight:400;letter-spacing:-.01em;margin:12px 0 8px">Warm on engagement.</h4>
-      <p style="font-size:13px;color:var(--bone-300);margin:0">Once they have the toolkit — or are in a room — surfaces shift to light mode. The system rewards showing up with warmth and hosting.</p>
+    <div class="j-step">
+      <div class="j-num">03</div>
+      <h3 class="j-title">Value before the room.</h3>
+      <p class="j-body">The list and the toolkit add value before any meetup. Navy is for the seal and the footer, not the whole house.</p>
     </div>
   </div>
 
-  <div class="cta-band" style="border-top:0;margin-top:60px;padding: 60px 0 0">
-    <div class="split">
-      <div>
-        <span class="eyebrow" style="margin-bottom:20px">Use it</span>
-        <h2>The tokens ship as two CSS files. Drop them in, everything follows.</h2>
-      </div>
-      <div class="aside">
-        <p><strong>site.css</strong> defines the dark defaults. <strong>site-light.css</strong> overrides via <code>.mode-light</code> on the body. All pages share the same components — only the tokens change.</p>
-        <div style="margin-top:24px;display:flex;gap:12px;flex-wrap:wrap">
-          <a href="index.html" class="cta primary">See the homepage <span class="arrow">→</span></a>
-          <a href="?mode=light" class="cta" id="preview-light">Preview this page in light mode</a>
+  <div class="cta-band" style="margin: 64px calc(var(--pad) * -1) 0; padding: 56px var(--pad);">
+    <div class="wrap" style="padding:0">
+      <div class="split">
+        <div>
+          <span class="eyebrow" style="margin-bottom:16px">Use it</span>
+          <h2>Tokens live in one CSS file. The seal is a PNG. Everything else follows.</h2>
+        </div>
+        <div class="aside">
+          <p><strong>site.css</strong> is the source of truth. Light is the default. Navy is a surface, not a theme invert.</p>
+          <div style="margin-top:24px;display:flex;gap:12px;flex-wrap:wrap">
+            <a href="index.html" class="cta primary">See the homepage <span class="arrow">→</span></a>
+          </div>
         </div>
       </div>
     </div>
@@ -405,16 +235,5 @@
 
 <div id="foot-mount"></div>
 <script src="assets/js/shell.js"></script>
-<script>
-  // Allow the whole design-system page to preview in light mode via ?mode=light
-  const params = new URLSearchParams(location.search);
-  if(params.get('mode') === 'light'){ document.body.classList.add('mode-light'); }
-  document.getElementById('preview-light')?.addEventListener('click', (e)=>{
-    e.preventDefault();
-    document.body.classList.toggle('mode-light');
-    const on = document.body.classList.contains('mode-light');
-    e.target.textContent = on ? 'Switch back to dark ←' : 'Preview page in light mode';
-  });
-</script>
 </body>
 </html>

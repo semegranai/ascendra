@@ -14,7 +14,7 @@ Homepage plan is written. This is everything else, in the order it should happen
 
 ## Site build
 
-- [x] Design system ported from ICV (`assets/css/site.css` + `site-light.css` + `design-system.html`).
+- [x] Design system from the 2025 seal + masterclass deck (navy `#03204E`, gold `#C89014`, cream, Playfair / Source Sans). Light by default.
 - [x] Homepage from the plan (nav → footer).
 - [x] `/events` — empty calendar, list capture, meetups-when-they-earn-a-date.
 - [x] `/about` — nonprofit + board. `/donate` — support the work. `/legal` — placeholder disclaimer.

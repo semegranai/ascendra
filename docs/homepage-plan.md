@@ -240,14 +240,15 @@ Repeat the email row. Do not invent a new headline.
 
 ## Visual direction
 
-**Locked to the ICV design system** (ported into `assets/css/site.css` + `site-light.css`, documented at `design-system.html`). Two rooms, same house.
+**Locked to the Ascendra seal and 2025 masterclass deck** (`assets/css/site.css`, documented at `design-system.html`).
 
-- **Dark** (default): public toolkit site.
-- **Light** (`.mode-light`): in-the-list / event-day / memo they take home.
-- **Type:** Newsreader · Instrument Sans · JetBrains Mono.
-- **Chrome:** rectangular mono CTAs, 0.14em tracking, olive markers, one warm `--signal` hover.
+- **Light (default):** warm paper `#FBF8F2`, navy type, gold accent. The house.
+- **Navy (ceremonial only):** footer, ticker, print covers. `#03204E` + cream `#EFE6D8`.
+- **Gold:** `#C89014` from the torch and seal ring.
+- **Type:** Playfair Display · Source Sans 3 · Great Vibes (hospitality only).
+- **Mark:** circular torch seal (`assets/img/logo.png`).
 
-Do not invent a second palette. See `design-system.html`.
+Do not borrow another firm’s dark chrome. See `design-system.html`.
 
 ---
 
@@ -302,7 +303,7 @@ That is the flexibility Carson asked for, without making the homepage a menu of 
 
 ## Build notes
 
-- Static HTML + the ICV CSS tokens. Deploy on Vercel (`vercel.json` is in the repo).
+- Static HTML + Ascendra tokens. Deploy on Vercel (`vercel.json` is in the repo).
 - Pull legal disclaimer from Destiny before public launch; placeholder is live at `/legal`.
 - Domain: confirm which names were just renewed and point DNS after deploy.
 - Working copy: `/Users/matt/Desktop/For Future/Ascendra/Grok Space` → `https://github.com/semegranai/ascendra`.
