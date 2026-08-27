@@ -6,13 +6,13 @@
 
 **What the market said:** Luke-warm. Not a “hell yeah.” Carson’s read: the bottleneck is not access to knowledge, it is commitment and discipline — and manufacturing that in other people is exhausting. The PE roll-up / easy-exit story is also getting weaker.
 
-**What we are now:** A small education nonprofit that gives business owners practical AI tools (skills, workflows, distilled documents) in exchange for an email, and optionally a donation. The durable asset is the list plus goodwill. Events, accreditation, and “advisor in a pocket” stay possible. They are not what the homepage sells today.
+**What we are now:** A small education nonprofit that gives business owners practical AI tools (skills, workflows, distilled documents) in exchange for an email, and optionally a donation. The durable asset is the list plus goodwill. Meetups still matter — they have their own page. The homepage does not sell tickets. If we host something later, this list is who we tell.
 
 **Two product instincts to hold at once**
 
 | Person | Instinct | What it means on the site |
 | --- | --- | --- |
-| Matt | Simplified [boringmarketing.com](https://boringmarketing.com/) | One sharp page. Show the tool working. Free useful thing for an email. Donate if it helped. Machine runs without another event. |
+| Matt | Simplified [boringmarketing.com](https://boringmarketing.com/) | One sharp page. Show the tool working. Free useful thing for an email. Donate if it helped. The list is built *before* the next room. |
 | Carson | Advisor in a pocket | A practical agent that can live-assess whether a business has transferable value, and eventually serve as a stamp of approval / accreditation. |
 
 v1 ships Matt’s machine. v1 *points at* Carson’s agent. We do not pretend the accreditation product exists.
@@ -23,4 +23,4 @@ v1 ships Matt’s machine. v1 *points at* Carson’s agent. We do not pretend th
 
 **Voice we drop:** event-day scarcity, $97 investment math, “join the mastermind,” happy-hour-as-the-hook.
 
-**Success for this phase:** a live page, a first skill pack people actually use, emails in a list, a donation path that does not overclaim tax treatment, and a homepage that can later host an agent or an event without a rewrite.
+**Success for this phase:** a live page, a first skill pack people actually use, emails in a list, a donation path that does not overclaim tax treatment, an Events page ready for a date, and a homepage that can later host an agent without a rewrite.

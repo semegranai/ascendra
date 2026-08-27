@@ -14,17 +14,16 @@ Homepage plan is written. This is everything else, in the order it should happen
 
 ## Site build
 
-- [ ] Style guide from the homepage visual direction (colors, type, components, transcript panel). Living doc, not a brand agency project.
-- [ ] Scaffold the site in this repo (`/Users/matt/Desktop/For Future/Ascendra/Grok Space`) and deploy a blank Vercel preview.
-- [ ] Build the **homepage only** from the plan (nav → footer).
-- [ ] Wire the email form (one list, tags: `source-homepage`, `pack-readiness`, `pack-capitals`, `pack-ops`, `waitlist-advisor`).
-- [ ] Wire Donate (amounts $10 / $25 / $50 / other). Copy = “support the work” until legal status is confirmed.
-- [ ] `/legal` placeholder: educational-use disclaimer until Destiny’s draft lands.
-- [ ] `/about` — short: nonprofit purpose, board (Carson, Matt, Destiny), what changed after 2025, what we will not do (pitch-fest, fake accreditation).
-- [ ] `/tools` — index of skill packs. Can wait if homepage cards already link to download.
+- [x] Design system ported from ICV (`assets/css/site.css` + `site-light.css` + `design-system.html`).
+- [x] Homepage from the plan (nav → footer).
+- [x] `/events` — empty calendar, list capture, meetups-when-they-earn-a-date.
+- [x] `/about` — nonprofit + board. `/donate` — support the work. `/legal` — placeholder disclaimer.
+- [ ] Wire the email form to a real list (Kit / Buttondown — tags: `source-homepage`, `pack-readiness`, `pack-capitals`, `pack-ops`, `waitlist-advisor`, `events-waitlist`).
+- [ ] Wire Donate to Stripe Payment Links ($10 / $25 / $50 / other). Copy = “support the work” until legal status is confirmed.
 - [ ] Favicon / wordmark. Do not stall launch on a logo exploration.
-- [ ] Mobile pass + basic SEO (title, meta, OG image with the tagline).
+- [ ] Mobile pass + OG image with the tagline.
 - [ ] Analytics that is not creepy (Plausible or similar).
+- [ ] Deploy on Vercel and point the renewed domain.
 
 ## Skill packs (the actual give)
 
@@ -60,7 +59,7 @@ Do not paste EPI PDFs into the repo. Original Ascendra distillations only.
 
 ## Content we are explicitly not doing yet
 
-- Events page, ticket checkout, speaker bios as the product.
+- Ticket checkout, speaker bios as the product, Eventbrite as the homepage.
 - Member portal, Slack community, forum.
 - PE/buyer lists, sponsorship packages, 501(c)6 paid membership tiers.
 - A fake “certification” badge.
@@ -69,4 +68,4 @@ Do not paste EPI PDFs into the repo. Original Ascendra distillations only.
 
 ## Done when
 
-A stranger can land on the homepage, understand it in 15 seconds, leave an email, get a skill that runs, and optionally put $10 in the jar — and the board is not on the hook to throw another Saturday in Kansas City to make the nonprofit feel alive.
+A stranger can land on the homepage, understand it in 15 seconds, leave an email, get a skill that runs, and optionally put $10 in the jar — and the Events page is ready for a date without being the identity of the nonprofit.

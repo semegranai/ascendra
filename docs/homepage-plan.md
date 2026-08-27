@@ -29,7 +29,7 @@ If the visitor leaves with a toolkit and we have their email, the page did its j
 
 **The boringmarketing move we steal:** do not describe a dashboard. Show the tool doing the work. Their Slack thread is the model; ours is a short owner ↔ agent transcript that ends in a downloadable memo.
 
-**The honesty move we add:** last year’s event is not on the homepage. No “tickets,” no date, no $97. If we run something later, this same list is who we tell.
+**The list-before-the-room move:** the homepage sells the toolkit, not tickets. No date, no $97, no mastermind. Meetups still have a dedicated Events page. If we host something, this list is who we tell.
 
 ---
 
@@ -43,13 +43,13 @@ Demo                 (the agent conversation)
 Skill packs          (3 live, 1 coming)
 How it works         (email → toolkit, optional donate)
 Advisor teaser       (Carson’s north star, labeled as building)
-Why this exists      (nonprofit, old mission, no event pitch)
+Why this exists      (nonprofit, mission)
 FAQ
 Close / email capture
 Footer
 ```
 
-Single page. No other routes required to ship v1. Links in the nav can scroll until those pages exist.
+Homepage is the v1 surface. Companion routes already exist as thin pages: `/events`, `/about`, `/donate`, `/legal`, `/design-system`.
 
 ---
 
@@ -57,13 +57,13 @@ Single page. No other routes required to ship v1. Links in the nav can scroll un
 
 **Left:** wordmark `ASCENDRA`
 
-**Center / right links:** Tools · About · Donate
+**Center / right links:** Tools · Events · About · Donate
 
 **Right button:** `Get the toolkit` → jumps to email capture in the hero or the closing block.
 
 Mobile: hamburger, same items, button last.
 
-Do not put Events, Mastermind, Login, or Pricing in the nav.
+Do not put Mastermind, Login, or Pricing in the nav. Events is a real page (empty calendar until a date earns it).
 
 ---
 
@@ -73,7 +73,7 @@ Do not put Events, Mastermind, Login, or Pricing in the nav.
 
 **Headline:** Author your legacy. Execute on your terms.
 
-**Subhead:** Last year we tried to teach this in a room. The room was fine. The format was not. So we turned the curriculum into AI skill packs you can run on your own business this week — valuation, transferable value, and the ops that get the owner out of the way.
+**Subhead:** Practical AI skill packs for owners who want a business that can run, grow, or transfer — without handing the reins to someone else. Leave an email, run the toolkit this week. Meetups and events still have a home here when they earn a date.
 
 **Primary CTA:** `Get the first toolkit` (email field + button on the same row)
 
@@ -192,7 +192,7 @@ Two short columns.
 
 **Left — what we believe (keep):** Business owners should be able to author their own legacy and execute on their own terms. The people who buy and scale companies already have these frameworks. Owners should too, without a $5k advisor day-rate or a pitch-fest.
 
-**Right — what changed:** We ran education in a room in 2025. It did not land as a “hell yeah.” Forcing commitment onto other people is the wrong business. Giving away sharp tools, collecting a list, and staying ready for whatever is actually useful — that we can do on $260 and a Super Grok sub.
+**Right — what this is:** A Missouri nonprofit that gives away sharp tools, collects a list, and stays ready for whatever is actually useful next — an agent, a meetup, a room again only if people ask for the room.
 
 No speaker bios in this block. A single line is enough: *Board: Carson Burke (CEPA, CFP) · Matt Semegran · legal partner Destiny Bounds.* Link “About” when that page exists.
 
@@ -200,7 +200,7 @@ No speaker bios in this block. A single line is enough: *Board: Carson Burke (CE
 
 ## 8. FAQ (homepage set)
 
-**Is this an event?** Not right now. If we host one later, people on this list hear first.
+**Is this an event?** Not the product. Meetups still have a page when they earn a date. This site is the toolkit you use in between. If we host something, people on this list hear first.
 
 **Is this a sales pitch?** No. No sponsors buying a slot on this page. No “book a call” funnel. Email and optional support.
 
@@ -238,31 +238,16 @@ Repeat the email row. Do not invent a new headline.
 
 ---
 
-## Visual direction (enough to design, not a full brand book)
+## Visual direction
 
-Old placeholder (`legal-fluence.com/ngo-test`) is dead. Last year’s page was a sales page. We are not recreating it.
+**Locked to the ICV design system** (ported into `assets/css/site.css` + `site-light.css`, documented at `design-system.html`). Two rooms, same house.
 
-**Feel:** quiet, specific, adult. A workshop bench, not a conference banner and not a YC SaaS gradient.
+- **Dark** (default): public toolkit site.
+- **Light** (`.mode-light`): in-the-list / event-day / memo they take home.
+- **Type:** Newsreader · Instrument Sans · JetBrains Mono.
+- **Chrome:** rectangular mono CTAs, 0.14em tracking, olive markers, one warm `--signal` hover.
 
-**Color (proposal — confirm before build):**
-- Ink `#12141A`
-- Paper `#F6F1E8`
-- Signal `#C45C26` (a single warm accent — ascent, not finance-teal)
-- Rule/line `#D9D1C3`
-- Good/ready `#2F6F4E` (used only on scores, never as a brand wash)
-
-**Type:**
-- Headlines: a real serif with some weight (Fraunces or Source Serif 4). Legacy, not luxury-bro.
-- Body: a workhorse sans (IBM Plex Sans or Source Sans 3).
-- UI / the demo transcript: IBM Plex Mono, small.
-
-**Motion:** fade-up on scroll, nothing else. No parallax, no looping hero video.
-
-**Imagery rule:** diagrams and the transcript mock beat stock. If we use photos later: real shops, real owners, real rooms. No handshake-in-a-glass-office.
-
-**Layout:** generous margins, one column of type max ~640px, demo panel can go wider. Desktop and mobile both get the email field in the hero — do not hide the capture.
-
-This is a v1 direction. A real style guide is on the todo list; do not block the homepage on a brand exploration.
+Do not invent a second palette. See `design-system.html`.
 
 ---
 
@@ -280,7 +265,7 @@ This is a v1 direction. A real style guide is on the todo list; do not block the
 
 1. Author your legacy. Execute on your terms. *(preferred)*
 2. Your business should be worth something without you in the chair.
-3. The exit-planning tools, without the event.
+3. Tools you can run this week. A room when it earns a date.
 4. Free AI toolkits for owners who want options.
 
 ### CTA bank
@@ -301,7 +286,7 @@ v1 can be a static page plus:
 - A Stripe Payment Link or similar for Donate (even $10 / $25 / $50 is enough)
 - Skill files hosted in this repo (`/toolkits/…`) and emailed as links, not as a “member portal”
 
-Do not build accounts, Slack install, or a dashboard for v1. That is how this turns back into an event company.
+Do not build accounts, Slack install, or a dashboard for v1. Events stay a calendar page, not the company.
 
 ---
 
@@ -309,16 +294,15 @@ Do not build accounts, Slack install, or a dashboard for v1. That is how this tu
 
 The body copy should not lock us into “we only give away markdown files forever.” Use this sentence in Why / Advisor:
 
-> We will build whatever does the most good with cheap intelligence — skills now, a live advisor if that earns it, a room again only if people ask for the room.
+> We will build whatever does the most good with cheap intelligence — skills now, a live advisor if that earns it, a room when people ask for the room.
 
 That is the flexibility Carson asked for, without making the homepage a menu of unbuilt products.
 
 ---
 
-## Build notes for the next session
+## Build notes
 
-- Stack lean: Next.js + Tailwind on Vercel is fine and cheap. A single HTML page is also fine. Do not introduce a CMS until there is a second page with real editorial.
-- Homepage is the only page in scope until this plan is approved.
-- Pull legal disclaimer from Destiny before public launch; ship a placeholder line until then.
+- Static HTML + the ICV CSS tokens. Deploy on Vercel (`vercel.json` is in the repo).
+- Pull legal disclaimer from Destiny before public launch; placeholder is live at `/legal`.
 - Domain: confirm which names were just renewed and point DNS after deploy.
-- Working copy of this repo: `/Users/matt/Desktop/For Future/Ascendra/Grok Space` → `https://github.com/semegranai/ascendra`.
+- Working copy: `/Users/matt/Desktop/For Future/Ascendra/Grok Space` → `https://github.com/semegranai/ascendra`.
