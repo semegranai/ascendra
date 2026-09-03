@@ -38,7 +38,7 @@
               <img src="assets/img/logo.png" width="44" height="44" alt="" />
               <strong>Ascendra Association</strong>
             </div>
-            <p>A Missouri nonprofit. We make business owners the client their advisors can finally do their highest-level work with.</p>
+            <p>A Missouri nonprofit. Open AI packs that bolt onto the advisors you already have — so you walk in as their best client, not as their replacement.</p>
           </div>
           <div class="foot-col">
             <h5>Use</h5>
