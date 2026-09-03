@@ -317,6 +317,11 @@ section{ position: relative; }
   padding-bottom: clamp(28px, 4vw, 48px);
 }
 @media (max-width: 800px){ .sec-head{ grid-template-columns: 1fr; gap: 16px; } }
+.sec-head.stack{
+  grid-template-columns: 1fr;
+  gap: 12px;
+}
+.sec-head.stack .h-section{ max-width: 22ch; }
 .pad-b{ padding-bottom: clamp(56px, 8vw, 104px); }
 
 /* ============ Journey ============ */
@@ -454,8 +459,8 @@ section{ position: relative; }
 }
 .faq details[open] summary::after{ content:"–"; }
 .faq details p{
-  margin: 12px 0 4px; color: var(--ink-soft); font-size: 17px; max-width: 68ch;
-  overflow: visible;
+  margin: 12px 0 2px; color: var(--ink-soft); font-size: 17px; max-width: none;
+  overflow: visible; line-height: 1.65;
 }
 
 /* ============ CTA band ============ */
