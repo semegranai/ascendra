@@ -13,8 +13,8 @@
 </head>
 <body>
 <div class="wf-banner">
-  <span><strong>Wireframe A</strong> — classic StoryBrand. One offer. You are the hero.</span>
-  <span><a href="http://127.0.0.1:4175/">See B</a> · <a href="http://127.0.0.1:4173/">Live site</a></span>
+  <span><strong>Wireframe A + B</strong> — StoryBrand spine, with the sample memo and skill walkthrough folded in.</span>
+  <span><a href="http://127.0.0.1:4175/">Original B</a> · <a href="http://127.0.0.1:4173/">Live site</a></span>
 </div>
 
 <nav>
@@ -25,21 +25,40 @@
     </a>
     <div class="links">
       <a href="#plan">How it works</a>
+      <a href="#demo">See it</a>
       <a href="#memo" class="cta primary">Get the memo</a>
     </div>
   </div>
 </nav>
 
-<header class="hero single" id="memo">
+<header class="hero" id="memo">
   <div class="wrap">
-    <span class="eyebrow">Free for business owners</span>
-    <h1 class="h-display">Your business should be worth something <em>without you in the chair.</em></h1>
-    <p class="lead">Most owners have a good income and a company nobody else can run. Ascendra is a Missouri nonprofit. We email you a free AI skill. You run it. You get a one-page memo: is this an asset, or still a job?</p>
-    <form class="capture" data-capture>
-      <input type="email" name="email" required placeholder="you@company.com" autocomplete="email" aria-label="Email" />
-      <button class="cta primary" type="submit">Email me the memo <span class="arrow">→</span></button>
-    </form>
-    <p class="capture-note">Takes about ten minutes in Claude or Grok. No pitch. No call.</p>
+    <div class="hero-inner">
+      <div>
+        <span class="eyebrow">Free for business owners</span>
+        <h1 class="h-display">Your business should be worth something <em>without you in the chair.</em></h1>
+        <p class="lead">Most owners have a good income and a company nobody else can run. Ascendra is a Missouri nonprofit. We email you a free AI skill. You answer like you would to an advisor who will not sell you anything. You get a one-page memo: is this an asset, or still a job?</p>
+        <form class="capture" data-capture>
+          <input type="email" name="email" required placeholder="you@company.com" autocomplete="email" aria-label="Email" />
+          <button class="cta primary" type="submit">Email me the memo <span class="arrow">→</span></button>
+        </form>
+        <p class="capture-note">Ten minutes in Claude or Grok. Answers stay on your machine. No pitch. No call.</p>
+      </div>
+      <aside class="scorecard" aria-label="Sample memo">
+        <div class="head">
+          <span class="mono-sm" style="color:var(--gold-deep)">Sample memo</span>
+          <span class="mono-sm">Not a price</span>
+        </div>
+        <div class="score-row"><span class="k">Human capital</span><span class="v low">You</span></div>
+        <div class="score-row"><span class="k">Customer capital</span><span class="v low">Your cell</span></div>
+        <div class="score-row"><span class="k">Structural capital</span><span class="v low">Undocumented</span></div>
+        <div class="score-row"><span class="k">Social capital</span><span class="v mid">Owner-held</span></div>
+        <div class="score-verdict">
+          <span class="mono-sm" style="color:var(--stop)">Verdict</span>
+          <p>Strong income. Weak asset. A buyer is not paying for your calendar.</p>
+        </div>
+      </aside>
+    </div>
   </div>
 </header>
 
@@ -108,13 +127,42 @@
       </div>
       <div class="crit-row">
         <div class="n">02</div>
-        <div class="t">Run it on your business<small>Paste into Claude or Grok. Answers stay on your machine.</small></div>
+        <div class="t">Run it on your business<small>Paste into Claude or Grok. Talk about your actual shop. Answers stay on your machine.</small></div>
         <div class="v">You</div>
       </div>
       <div class="crit-row">
         <div class="n">03</div>
-        <div class="t">Read the memo<small>Keep it. If it helped, optional $10 in the jar.</small></div>
+        <div class="t">Keep the memo<small>Read it. If it helped, optional $10 in the jar. Unsubscribe anytime.</small></div>
         <div class="v">Optional</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="demo" class="rule-strong">
+  <div class="wrap pad-b" style="padding-top: clamp(48px, 7vw, 80px)">
+    <span class="eyebrow">What it sounds like</span>
+    <h2 class="h-section" style="margin: 14px 0 24px">You talk. <em>It writes the verdict.</em></h2>
+    <div class="transcript">
+      <div class="transcript-bar">
+        <span class="live">Value readiness</span>
+        <span>On your machine</span>
+      </div>
+      <div class="t-row">
+        <div class="t-who">You</div>
+        <p>Is this even sellable, or am I just a well-paid job?</p>
+      </div>
+      <div class="t-row agent">
+        <div class="t-who">Ascendra</div>
+        <p>Four things: who works without you, who customers are loyal to, what is written down, whether the culture survives a new owner.</p>
+      </div>
+      <div class="t-row">
+        <div class="t-who">You</div>
+        <p>It’s me. Bookkeeper one day a week. Customers call my cell.</p>
+      </div>
+      <div class="t-row agent">
+        <div class="t-who">Ascendra</div>
+        <p>That’s a strong income stream and a weak asset. Three moves this quarter: write the top 10 jobs down, get inbound off your cell, name the number the business has to be worth for the life you want next.</p>
       </div>
     </div>
     <div style="margin-top:28px">
@@ -123,8 +171,8 @@
   </div>
 </section>
 
-<section class="rule-strong">
-  <div class="wrap pad-b" style="padding-top: clamp(48px, 7vw, 80px)">
+<section>
+  <div class="wrap pad-b">
     <div class="sec-head">
       <span class="mono-sm">Stakes</span>
       <div>
@@ -151,7 +199,8 @@
     <div class="split">
       <div>
         <span class="eyebrow" style="margin-bottom:16px">Do this</span>
-        <h2>Get the memo. Decide later if we earned anything else.</h2>
+        <h2>That’s the whole product, for now.</h2>
+        <p class="lead" style="margin-top:16px">A free memo so you can see clearly. Meetups later, if anyone asks for a room. An advisor in a pocket if this earns it.</p>
       </div>
       <div>
         <form class="capture" data-capture>
@@ -168,7 +217,7 @@
   <div class="wrap">
     <div class="foot-legal" style="border:0;padding-top:0">
       <span>© 2026 Ascendra Association</span>
-      <span>Wireframe A · StoryBrand</span>
+      <span>Wireframe A · StoryBrand + walkthrough</span>
     </div>
   </div>
 </footer>
