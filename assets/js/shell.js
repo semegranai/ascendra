@@ -38,7 +38,7 @@
               <img src="assets/img/logo.png" width="44" height="44" alt="" />
               <strong>Ascendra Association</strong>
             </div>
-            <p>A Missouri nonprofit. Free AI maps, tools, and walkthroughs so business owners can author their own legacy — without the advisor day-rate.</p>
+            <p>A Missouri nonprofit. We make business owners the client their advisors can finally do their highest-level work with.</p>
           </div>
           <div class="foot-col">
             <h5>Use</h5>
