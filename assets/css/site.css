@@ -561,6 +561,29 @@ footer{
   .capture .cta{ width: 100%; justify-content: center; }
 }
 
+.wf-problems{
+  display:grid; grid-template-columns: repeat(3, 1fr); gap: 18px;
+}
+@media (max-width: 800px){ .wf-problems{ grid-template-columns: 1fr; } }
+.wf-card{
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 24px;
+}
+.wf-card .k{
+  font-size: 11px; font-weight: 700; letter-spacing: 0.14em;
+  text-transform: uppercase; color: var(--gold-deep); margin-bottom: 10px;
+}
+.wf-card h3{ font-family: var(--serif); font-size: 22px; margin: 0 0 10px; color: var(--navy); }
+.wf-card p{ margin: 0; color: var(--ink-soft); font-size: 15px; }
+.wf-stakes{ display:grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+@media (max-width: 800px){ .wf-stakes{ grid-template-columns: 1fr; } }
+.wf-stakes .fail{ border-color: color-mix(in oklab, var(--stop) 35%, var(--line)); }
+.wf-stakes .win{ border-color: color-mix(in oklab, var(--pass) 35%, var(--line)); }
+.hero.single .hero-inner{ grid-template-columns: 1fr; max-width: 720px; }
+.hero.single .capture{ max-width: 520px; }
+
 @media (prefers-reduced-motion: reduce){
   .ticker-track{ animation: none; }
   *{ transition: none !important; }

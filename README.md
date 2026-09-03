@@ -1,15 +1,13 @@
 # Ascendra
 
-Missouri nonprofit. Tools for business owners who want to author their legacy and execute on their own terms.
+Missouri nonprofit. A free AI skill for business owners: a one-page memo that shows whether the company is an asset or still a job — and the changes to make first.
 
-This repo is the 2026 rebuild: a public toolkit site (email → skill packs, optional support) plus an Events page for meetups when they earn a date. Visual language is Ascendra’s own: light paper, navy + gold from the 2025 seal and masterclass deck.
+Visual language is Ascendra’s own: light paper, navy `#03204E` + gold `#C89014` from the 2025 seal.
 
 ## Working copy
 
 Local: `/Users/matt/Desktop/For Future/Ascendra/Grok Space`  
 Remote: https://github.com/semegranai/ascendra
-
-2025 source material (copy, agenda, curriculum) stays on disk under `Desktop/For Future/Ascendra/` and is **not** in this repo.
 
 ## Local
 
@@ -24,21 +22,16 @@ Then: [http://127.0.0.1:4173/](http://127.0.0.1:4173/)
 
 | Path | What |
 | --- | --- |
-| `index.html` | Homepage |
-| `events.html` | Meetups / events (empty calendar, list capture) |
+| `index.html` | Homepage (StoryBrand) |
+| `tools.html` | The memo, plus later packs |
+| `events.html` | Meetups when they earn a date |
 | `about.html` | Nonprofit + board |
 | `donate.html` | Support the work |
 | `legal.html` | Placeholder disclaimer |
-| `design-system.html` | Tokens, type, components, both modes |
+| `design-system.html` | Tokens and type |
 
-## Docs
-
-| Doc | What |
-| --- | --- |
-| [docs/product-brief.md](docs/product-brief.md) | What this is |
-| [docs/homepage-plan.md](docs/homepage-plan.md) | Homepage spec |
-| [docs/TODO.md](docs/TODO.md) | Remaining work (email, Stripe, skill files, Vercel) |
+Wireframe experiments still live under `wireframes/` (ports 4174 / 4175 if you spin those up).
 
 ## Hosting
 
-Static HTML. Push to Vercel when the domain is ready. Email (Kit) and Stripe are not wired yet — forms confirm locally only.
+Static HTML. Push to Vercel when the domain is ready. Email and Stripe are not wired yet — forms confirm locally only.

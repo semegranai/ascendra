@@ -2,7 +2,7 @@
 (function () {
   const NAV_ITEMS = [
     ["home", "Home", "index.html"],
-    ["tools", "Tools", "index.html#tools"],
+    ["plan", "How it works", "index.html#plan"],
     ["events", "Events", "events.html"],
     ["about", "About", "about.html"],
     ["donate", "Donate", "donate.html"],
@@ -24,7 +24,7 @@
             ([k, label, href]) =>
               `<a href="${href}" class="${k === current ? "current" : ""}">${label}</a>`
           ).join("")}
-          <a href="index.html#toolkit" class="cta primary">Get the toolkit <span class="arrow">→</span></a>
+          <a href="index.html#memo" class="cta primary">Get the memo <span class="arrow">→</span></a>
         </div>
       </div>
     </nav>`;
@@ -38,17 +38,19 @@
               <img src="assets/img/logo.png" width="44" height="44" alt="" />
               <strong>Ascendra Association</strong>
             </div>
-            <p>A Missouri nonprofit. Practical AI tools for business owners who want to author their legacy and execute on their own terms.</p>
+            <p>A Missouri nonprofit. A free skill that shows owners what has to change so the business can run without them in the chair.</p>
           </div>
           <div class="foot-col">
             <h5>Use</h5>
-            <a href="index.html#tools">Tools</a>
-            <a href="index.html#how">How it works</a>
-            <a href="events.html">Events</a>
+            <a href="index.html#memo">The memo</a>
+            <a href="index.html#plan">How it works</a>
+            <a href="index.html#demo">See it</a>
+            <a href="tools.html">Tools</a>
           </div>
           <div class="foot-col">
             <h5>Firm</h5>
             <a href="about.html">About</a>
+            <a href="events.html">Events</a>
             <a href="donate.html">Support the work</a>
             <a href="design-system.html">Design system</a>
           </div>
@@ -93,7 +95,7 @@
       const note = form.parentElement.querySelector(".capture-note");
       if (note) {
         note.textContent =
-          "Email wiring is next. For now this confirms the form works — we’ll hook Kit / the toolkit send before launch.";
+          "Email wiring is next. For now this confirms the form works — we’ll send the skill from here before launch.";
       }
     });
   });
