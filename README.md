@@ -1,6 +1,6 @@
 # Ascendra
 
-Missouri nonprofit. A free AI skill for business owners: a one-page memo that shows whether the company is an asset or still a job — and the changes to make first.
+Missouri nonprofit. Free AI skill packs — a map so business owners can author their own legacy. First pack is the Value Readiness Memo.
 
 Visual language is Ascendra’s own: light paper, navy `#03204E` + gold `#C89014` from the 2025 seal.
 
