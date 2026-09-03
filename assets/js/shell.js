@@ -3,6 +3,7 @@
   const NAV_ITEMS = [
     ["home", "Home", "index.html"],
     ["plan", "How it works", "index.html#plan"],
+    ["advisors", "For advisors", "advisors.html"],
     ["events", "Events", "events.html"],
     ["about", "About", "about.html"],
     ["donate", "Donate", "donate.html"],
@@ -24,7 +25,7 @@
             ([k, label, href]) =>
               `<a href="${href}" class="${k === current ? "current" : ""}">${label}</a>`
           ).join("")}
-          <a href="index.html#memo" class="cta primary">Get the memo <span class="arrow">→</span></a>
+          <a href="index.html#memo" class="cta primary">Get pack 1 <span class="arrow">→</span></a>
         </div>
       </div>
     </nav>`;
@@ -38,13 +39,14 @@
               <img src="assets/img/logo.png" width="44" height="44" alt="" />
               <strong>Ascendra Association</strong>
             </div>
-            <p>A Missouri nonprofit. Open AI packs that bolt onto the advisors you already have — so you walk in as their best client, not as their replacement.</p>
+            <p>A Missouri nonprofit. Free AI maps, tools, and walkthroughs so business owners can author their own legacy — starting with the four capitals.</p>
           </div>
           <div class="foot-col">
             <h5>Use</h5>
-            <a href="index.html#memo">The memo</a>
+            <a href="index.html#memo">Pack 1</a>
             <a href="index.html#plan">How it works</a>
-            <a href="index.html#demo">See it</a>
+            <a href="index.html#who">Who we help</a>
+            <a href="advisors.html">For advisors</a>
             <a href="tools.html">Tools</a>
           </div>
           <div class="foot-col">

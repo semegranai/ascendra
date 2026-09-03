@@ -1,6 +1,6 @@
 # Ascendra
 
-Missouri nonprofit. Open AI packs that bolt onto the advisors owners already have. First pack is the Value Readiness Memo.
+Missouri nonprofit. Free AI maps, tools, and walkthroughs so owners can author their own legacy. Pack 1 is the four-capital Value Readiness Memo. Advisors get a separate page to send clients.
 
 Visual language is Ascendra’s own: light paper, navy `#03204E` + gold `#C89014` from the 2025 seal.
 
